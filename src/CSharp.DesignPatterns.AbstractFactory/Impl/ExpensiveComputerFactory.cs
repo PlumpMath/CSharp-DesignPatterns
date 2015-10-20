@@ -3,11 +3,11 @@
         #region IComputerFactory Members
 
         public IHardDrive GetHardDrive() {
-            return new AverageHardDrive();
+            return new ExpensiveHardDrive();
         }
 
         public IMonitor GetMonitor() {
-            return new AverageMonitor();
+            return new ExpensiveMonitor();
         }
 
         public IProcessor GetProcessor() {

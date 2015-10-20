@@ -39,7 +39,7 @@ namespace CSharp.DesignPatterns.AbstractFactory.Test {
         [Test]
         public void AverageComputerFactory_Should_Build_Cheap_Computer_Configuration() {
             // arrange
-            IComputerFactory factory = new ExpensiveComputerFactory();
+            IComputerFactory factory = new AverageComputerFactory();
 
             // act
             var processor = factory.GetProcessor();
