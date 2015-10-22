@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.DesignPatterns.Build
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.DesignPatterns.Builder.Test", "test\CSharp.DesignPatterns.Builder.Test\CSharp.DesignPatterns.Builder.Test.csproj", "{99286489-5484-467D-AA63-95D7BA211B30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.DesignPatterns.FactoryMethod", "src\CSharp.DesignPatterns.FactoryMethod\CSharp.DesignPatterns.FactoryMethod.csproj", "{3AAE80E8-4E53-481A-BD1F-928743CF4435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.DesignPatterns.FactoryMethod.Test", "test\CSharp.DesignPatterns.FactoryMethod.Test\CSharp.DesignPatterns.FactoryMethod.Test.csproj", "{70C109E4-1828-4519-BB99-34DCE5EEA5A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{99286489-5484-467D-AA63-95D7BA211B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99286489-5484-467D-AA63-95D7BA211B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99286489-5484-467D-AA63-95D7BA211B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAE80E8-4E53-481A-BD1F-928743CF4435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAE80E8-4E53-481A-BD1F-928743CF4435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAE80E8-4E53-481A-BD1F-928743CF4435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAE80E8-4E53-481A-BD1F-928743CF4435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C109E4-1828-4519-BB99-34DCE5EEA5A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C109E4-1828-4519-BB99-34DCE5EEA5A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C109E4-1828-4519-BB99-34DCE5EEA5A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C109E4-1828-4519-BB99-34DCE5EEA5A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +72,7 @@ Global
 		{8C5A28BC-97C6-488F-8824-7BFF0A6E5E4B} = {9A26DD68-624E-4BDB-9C1C-92D372E77D00}
 		{C6A74C73-47E4-4AB1-B360-CA00B0E9D45E} = {E114BEC9-B24E-48A0-98D9-44628190BDDF}
 		{99286489-5484-467D-AA63-95D7BA211B30} = {9A26DD68-624E-4BDB-9C1C-92D372E77D00}
+		{3AAE80E8-4E53-481A-BD1F-928743CF4435} = {E114BEC9-B24E-48A0-98D9-44628190BDDF}
+		{70C109E4-1828-4519-BB99-34DCE5EEA5A2} = {9A26DD68-624E-4BDB-9C1C-92D372E77D00}
 	EndGlobalSection
 EndGlobal

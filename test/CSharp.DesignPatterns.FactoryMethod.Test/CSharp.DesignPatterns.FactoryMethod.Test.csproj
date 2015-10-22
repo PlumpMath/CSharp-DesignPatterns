@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F784A2A0-B631-41E7-AC1F-03FB352AA874}</ProjectGuid>
+    <ProjectGuid>{70C109E4-1828-4519-BB99-34DCE5EEA5A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharp.DesignPatterns.Specification</RootNamespace>
-    <AssemblyName>CSharp.DesignPatterns.Specification</AssemblyName>
+    <RootNamespace>CSharp.DesignPatterns.FactoryMethod.Test</RootNamespace>
+    <AssemblyName>CSharp.DesignPatterns.FactoryMethod.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\build\</OutputPath>
+    <OutputPath>..\..\build\test\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,32 +24,35 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\build\</OutputPath>
+    <OutputPath>..\..\build\test\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Impl\AndSpecification.cs" />
-    <Compile Include="Impl\CompositeSpecification.cs" />
-    <Compile Include="Impl\NotSpecification.cs" />
-    <Compile Include="Impl\OrSpecification.cs" />
-    <Compile Include="ISpecification.cs" />
-    <Compile Include="NotificationManagerImplementation.cs" />
+    <Compile Include="FactoryMethodTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CSharp.DesignPatterns.FactoryMethod\CSharp.DesignPatterns.FactoryMethod.csproj">
+      <Project>{3aae80e8-4e53-481a-bd1f-928743cf4435}</Project>
+      <Name>CSharp.DesignPatterns.FactoryMethod</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
